@@ -1,0 +1,4 @@
+Monil Gandhi(Driver)/Chitwant(scribe)
+1) it throws an error (clone method)
+2) The person class clone shows an error
+3) Because the person clone throws an exception

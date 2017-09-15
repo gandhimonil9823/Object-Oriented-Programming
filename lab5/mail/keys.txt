@@ -1,0 +1,14 @@
+1
+4
+#
+You have reached mailbox 14. 
+Please leave a message now.
+hello monil
+h
+Enter mailbox number followed by #
+1
+4
+#
+You have reached mailbox 14. 
+Please leave a message now.
+

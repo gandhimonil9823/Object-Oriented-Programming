@@ -1,0 +1,12 @@
+Your name: Monil Gandhi
+Your student ID: 010020231	
+Your major: Computer Science
+Your preferred email address: gandhimonil.2008@gmail.com 
+Check one: [~] Undergraduate, [ ] Graduate, [ ] Open university 
+Repeating the class? [ ] Yes, [~] No
+Place and semester where you took a programming course in Java: SJSU Freshmen 2nd Semester
+Course number and grade received: B
+Place and semester where you took a course in data structures: SJSU Sophomore 2nd Semester
+Course number and grade received: B
+Time it took you to answer the two questions below: 3 hours
+Did you ask anyone for help? [ ] Yes, [~] No

@@ -1,0 +1,14 @@
+Name in Design Pattern |   Actual Name
+=====================================================
+Aggregate              |   none
+ConcreteAggregate      |   InputStream, String, File
+Iterator               |   Iterator<String>
+ConcreteIterator       |   Scanner
+createIterator()       |   new Scanner(...)
+next()                 |   next()
+isDone()               |   opposite of hasNext()
+currentItem()          |   Return value of next()
+
+The pattern doesn't fully apply because the classes that can
+be used with a scanner don't have a common interface. (There
+is no "Scannable".)

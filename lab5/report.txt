@@ -1,0 +1,7 @@
+Monil Gandhi(Driver)/ Enrique Cardenas(Scribe)
+				
+				Lab 5
+
+1) The mail folder is copied from oodp3code/chapter2 to lab5
+
+2) The commands typed on the command line were displayed 

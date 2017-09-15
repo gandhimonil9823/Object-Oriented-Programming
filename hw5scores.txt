@@ -1,0 +1,457 @@
+Student: gandhi_monil
+ArraySetTest passes (max 5, -1 per failure, min 0): 5
+BitSetTest passes (max 5, -1 per failure, min 0): 2
+IntSeqTest passes (max 5, -1 per failure, min 0): 0
+IntSequence.fromIterator returns lambda expressions (max 2): 2
+Provides IteratorTest, SequenceTest with at least 3 test cases each (max 3): 2
+No CheckStyle issues (max 3): 0
+Clean submission directory (no .class, .metadata etc.) (max 3): 2
+At least 3 git checkins (max 3): 3
+-------------------------------------------------
+ArraySetTest.java
+JUnit version 4.11
+........
+Time: 0.014
+
+OK (8 tests)
+
+-------------------------------------------------
+BitSetTest.java
+JUnit version 4.11
+.E...E.E..
+Time: 0.016
+There were 3 failures:
+1) iteratorVisitationOrder(BitSetTest)
+java.lang.AssertionError: expected:<-2> but was:<0>
+	at BitSetTest.iteratorVisitationOrder(BitSetTest.java:21)
+2) concurrentMod3(BitSetTest)
+java.lang.AssertionError: Expected exception: java.util.ConcurrentModificationException
+3) removeTest(BitSetTest)
+java.util.ConcurrentModificationException
+	at BitSet$BitSetIterator.next(BitSet.java:254)
+	at BitSet$BitSetIterator.next(BitSet.java:183)
+	at BitSetTest.removeTest(BitSetTest.java:43)
+
+FAILURES!!!
+Tests run: 7,  Failures: 3
+
+-------------------------------------------------
+IntSeqTest.java
+JUnit version 4.11
+.E.E.E.E.E.E.E.E.E
+Time: 0.116
+There were 9 failures:
+1) fromIteratorTest(IntSeqTest)
+java.util.NoSuchElementException
+	at java.util.AbstractList$Itr.next(AbstractList.java:364)
+	at IntSequence.lambda$fromIterator$0(IntSequence.java:62)
+	at IntSeqTest.fromIteratorTest(IntSeqTest.java:17)
+2) alternateInfinite(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<0>
+	at IntSeqTest.alternateInfinite(IntSeqTest.java:106)
+3) alternateTest1(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at IntSeqTest.alternateTest1(IntSeqTest.java:27)
+4) alternateTest2(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at IntSeqTest.alternateTest2(IntSeqTest.java:45)
+5) alternateTest3(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at IntSeqTest.alternateTest3(IntSeqTest.java:61)
+6) alternateTest4(IntSeqTest)
+java.util.NoSuchElementException
+	at java.util.AbstractList$Itr.next(AbstractList.java:364)
+	at IntSequence.lambda$fromIterator$0(IntSequence.java:62)
+	at IntSeqTest.alternateTest4(IntSeqTest.java:80)
+7) alternateTest5(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<0>
+	at IntSeqTest.alternateTest5(IntSeqTest.java:89)
+8) multipleAlternating(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<5>
+	at IntSeqTest.multipleAlternating(IntSeqTest.java:125)
+9) alternatingAlternating(IntSeqTest)
+java.lang.AssertionError: expected:<1> but was:<9>
+	at IntSeqTest.alternatingAlternating(IntSeqTest.java:145)
+
+FAILURES!!!
+Tests run: 9,  Failures: 9
+
+-------------------------------------------------
+IteratorTest.java
+JUnit version 4.11
+........
+Time: 0.014
+
+OK (8 tests)
+
+-------------------------------------------------
+SequenceTest.java
+JUnit version 4.11
+..
+Time: 0.113
+
+OK (2 tests)
+
+-------------------------------------------------
+import static org.junit.Assert.*;
+
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+
+import org.junit.Test;
+
+/**
+ * Tests the Iterator implementation.
+ */
+public class IteratorTest
+{
+   /**
+    * Tests setting a value.
+    */
+   @Test
+   public void testOneElement()
+   {
+      BitSet set = new BitSet();
+      set.set(100);
+      set.set(102);
+      set.set(150);
+      set.set(200);
+      set.set(250);
+      BitSet.BitSetIterator iter = (BitSet.BitSetIterator) set.iterator();
+      assertEquals(5, set.modCount);
+      iter.next();
+      iter.remove();
+      iter.next();
+      iter.remove();
+      assertEquals(7, iter.modCount);
+   }
+
+   /**
+    * Tests that the bits are set in the elements array
+    */
+   @Test(expected = ConcurrentModificationException.class)
+   public void testBits()
+   {
+      BitSet set = new BitSet();
+      set.set(100);
+      set.set(102);
+      set.set(150);
+      set.set(200);
+      set.set(250);
+      set.set(300);
+      Iterator<Integer> iter = set.iterator();
+      assertTrue(iter.hasNext());
+      iter.next();
+      Iterator<Integer> iter2 = set.iterator();
+      iter.remove();
+      iter2.next();
+
+   }
+
+   /**
+    * JUnit test for testing the solution
+    */
+   @Test(expected = IllegalStateException.class)
+   public void arrayTset()
+   {
+      ArraySet set = new ArraySet();
+      set.set(100);
+      set.set(89);
+      set.set(40);
+      set.set(150);
+      Iterator<Integer> iter = set.iterator();
+      assertTrue(iter.hasNext());
+      assertEquals((Integer) 100, iter.next());
+      assertTrue(iter.hasNext());
+      assertEquals((Integer) 89, iter.next());
+      assertTrue(iter.hasNext());
+      assertEquals((Integer) 40, iter.next());
+      assertTrue(iter.hasNext());
+      assertEquals((Integer) 150, iter.next());
+      assertFalse(iter.hasNext());
+      assertNull(iter.next());
+      iter.next();
+      iter.remove();
+      iter.remove();
+      assertNull(iter.next());
+
+   }
+
+   /**
+    * JUnit test for testing the solution
+    */
+
+   @Test(expected = ConcurrentModificationException.class)
+   public void modCountTest()
+   {
+      ArraySet set = new ArraySet();
+      assertEquals(0, set.modCount);
+      set.set(100);
+      assertEquals(1, set.modCount);
+      set.set(110);
+      assertEquals(2, set.modCount);
+      set.clear(100);
+      assertEquals(3, set.modCount);
+      set.clear(100);
+      assertEquals(3, set.modCount);
+      ArraySet.ArraySetIterator iter = (ArraySet.ArraySetIterator) set.iterator();
+      assertEquals(3, iter.modCount);
+      iter.next();
+      ArraySet.ArraySetIterator iter2 = (ArraySet.ArraySetIterator) set.iterator();
+      assertEquals(3, iter2.modCount);
+      iter.remove();
+      assertEquals(4, set.modCount);
+      assertEquals(4, iter.modCount);
+      iter2.next();
+   }
+
+   /**
+    * JUnit test for testing the solution
+    */
+   @Test
+   public void removeTest2()
+   {
+      IntSet set = new ArraySet();
+      set.set(100);
+      set.set(99);
+      set.set(1001);
+      set.set(2000);
+      Iterator<Integer> iter = set.iterator();
+      iter.next();
+      iter.next();
+      iter.remove();
+      iter.next();
+      iter.next();
+      iter.remove();
+      iter = set.iterator();
+      assertTrue(iter.hasNext());
+      assertEquals((Integer) 100, iter.next());
+      assertTrue(iter.hasNext());
+      assertEquals((Integer) 2000, iter.next());
+      assertFalse(iter.hasNext());
+   }
+
+   /**
+    * JUnit test for testing the solution
+    */
+   @Test(expected = IllegalStateException.class)
+   public void removeTestBit()
+   {
+      IntSet set = new BitSet();
+      set.set(100);
+      set.set(150);
+      Iterator<Integer> iter = set.iterator();
+      iter.next();
+      iter.remove();
+      iter.remove();
+
+   }
+
+   /**
+    * JUnit test for testing the solution
+    */
+   @Test
+   public void someOneElse()
+   {
+      ArraySet set = new ArraySet();
+      set.set(100);
+      set.set(102);
+      set.set(200);
+      set.set(500);
+      set.set(1000);
+      set.set(50);
+      ArraySet.ArraySetIterator iter = (ArraySet.ArraySetIterator) set.iterator();
+      while (iter.hasNext())
+      {
+         int ele = iter.next();
+         iter.remove();
+      }
+   }
+
+   /**
+    * JUnit test for testing the solution
+    */
+   @Test
+   public void someOneElse1()
+   {
+      ArraySet set = new ArraySet();
+      set.set(100);
+      set.set(102);
+      ArraySet.ArraySetIterator iter = (ArraySet.ArraySetIterator) set.iterator();
+      iter.next();
+      iter.remove();
+      iter.next();
+      iter.remove();
+
+   }
+}
+ 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+/**
+ * Class to test the IntSequence
+ * 
+ * @author monil
+ */
+public class SequenceTest
+{
+   /**
+    * Tests setting a value.
+    */
+   @Test
+   public void testSequence()
+   {
+      ArraySet set = new ArraySet();
+      set.set(100);
+      set.set(102);
+      set.set(104);
+      set.set(105);
+      set.set(106);
+      set.set(107);
+      set.set(108);
+      set.set(109);
+      ArraySet.ArraySetIterator iter = (ArraySet.ArraySetIterator) set.iterator();
+      Integer r = 100;
+
+      assertEquals((int) IntSequence.fromIterator(iter).next(), (int) r);
+      Integer e = 102;
+      assertEquals((int) IntSequence.fromIterator(iter).next(), (int) e);
+      // assertEquals(IntSequence.alternate()).)
+      Integer w = null;
+      // assertEquals((int)IntSequence.fromIterator(iter).next(),(int)w);
+
+   }
+
+   /**
+    * Tests setting a value.
+    */
+   @Test
+   public void testSequence4()
+   {
+
+      ArraySet set = new ArraySet();
+      set.set(90);
+      set.set(10);
+      ArraySet.ArraySetIterator iter = (ArraySet.ArraySetIterator) set.iterator();
+      Integer r = 90;
+      assertEquals((int) IntSequence.fromIterator(iter).next(), (int) r);
+      Integer e = 10;
+      assertEquals((int) IntSequence.fromIterator(iter).next(), (int) e);
+
+   }
+}
+-------------------------------------------------
+Starting audit...
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:10: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:12:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:31:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:53:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:67:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:75:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:86:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:97:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/ArraySetTest.java:108:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:10: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:12:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:32:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:54:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:62:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:73:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:84:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/BitSetTest.java:95:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:6: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:8:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:20:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:38:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:54:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:70:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:83:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:101:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:114:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSeqTest.java:136:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:5:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:6:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:7:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:8:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:9:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:10:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/grade/gandhi_monil/IntSet.java:11:4: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 35 errors.
+-------------------------------------------------
+.
+./IteratorTest.java
+./IntSequence.java
+./SequenceTest.java
+./.settings
+./.settings/org.eclipse.jdt.core.prefs
+./IntSet.java
+./BitSet.java
+./ArraySet.java
+-------------------------------------------------
+commit 378d109279afa14115052b64fe52f62fe201d97a
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Mar 6 03:21:09 2017 -0800
+
+    hw5 Submitted
+
+:100644 100644 1250d96... a4b1122... M	hw5/SequenceTest.java
+
+commit 35444260c7a418018a0c6de15a504395c5dc2175
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Mar 6 03:19:20 2017 -0800
+
+    hw5 submitted
+
+:100755 100755 9b4e5c2... 34951ad... M	hw5/ArraySet.java
+:100755 100755 bd0476e... d45a015... M	hw5/BitSet.java
+:100644 100644 fb46c38... bced928... M	hw5/IntSequence.java
+:100644 100644 31e5329... f61de33... M	hw5/IntSet.java
+:100644 100644 2285cdc... 29ad37a... M	hw5/IteratorTest.java
+:000000 100644 0000000... 1250d96... A	hw5/SequenceTest.java
+
+commit 0a57d5f062efccc2da24a185c5918d66c73c436f
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Mar 5 23:55:10 2017 -0800
+
+    Working on hw5
+
+:100644 100644 9236143... fb46c38... M	hw5/IntSequence.java
+
+commit 68a8003d03a9859fa372fc443b2f539309f6b187
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sat Mar 4 23:36:22 2017 -0800
+
+    Working on hw5 part2
+
+:100755 100755 bd947a6... 9b4e5c2... M	hw5/ArraySet.java
+:100755 100755 ef5b403... bd0476e... M	hw5/BitSet.java
+:100644 100644 e165a2f... 9236143... M	hw5/IntSequence.java
+:100644 100644 57aec6d... 2285cdc... M	hw5/IteratorTest.java
+
+commit 988f1dc0d4c67023f85d83e5282b0575d7c8b8ee
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Fri Mar 3 23:24:15 2017 -0800
+
+    Working on hw5
+
+:100644 100644 9796730... bb56c78... M	hw4/SetTest.java
+:000000 100644 0000000... 1b5cca5... A	hw5/.settings/org.eclipse.jdt.core.prefs
+:000000 100755 0000000... bd947a6... A	hw5/ArraySet.java
+:000000 100755 0000000... ef5b403... A	hw5/BitSet.java
+:000000 100644 0000000... e165a2f... A	hw5/IntSequence.java
+:000000 100644 0000000... 31e5329... A	hw5/IntSet.java
+:000000 100644 0000000... 57aec6d... A	hw5/IteratorTest.java
+
+commit 6d8289442d05b06e29628b1d4d44ff5571bd88e6
+Author: xiaofanlinus <graderxiaofanlin@gmail.com>
+Date:   Tue Feb 28 00:00:10 2017 -0800
+
+    hw4 graded
+
+:000000 100644 0000000... 1025f5b... A	hw4scores.txt

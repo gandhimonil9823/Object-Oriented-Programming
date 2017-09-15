@@ -1,0 +1,10 @@
+Student: gandhi_monil
+Buttons for diamond, HV, VH edge displayed (3 points): 0
+Connect 2 circles with HV edge--correctly drawn? (2 points): 0
+Correctly attached? (2 points): 0
+Repeat with VH edge (2 points): 0
+Diamond correctly drawn (2 points): 
+Connect 2 diamonds with line edge--correctly attached (3 points): 0
+In selection mode, click near HV and VH edge to selected (2 points): 0
+
+The program can not be run.

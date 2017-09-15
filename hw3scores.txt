@@ -1,0 +1,370 @@
+Student: gandhi_monil
+test1.in passes with empty diff (max 8): 8
+test2.in passes with empty diff (max 8): 0
+No missing javadoc comments (max 4): 4
+(Ignore tab errors this time)
+At least 3 git checkins (max 4): 2
+ 
+test1.in
+ 
+test2.in
+49c49
+< followupid=0
+---
+> followupid=1
+53,54c53,56
+< ERROR
+< reason=Invalid followup ID 1 1
+---
+> OK
+> text=What is a watch?
+> author=alice
+> resolved=false
+60c62
+< followupreplyid=0
+---
+> followupreplyid=1
+70c72
+< views=3
+---
+> views=2
+80a83,87
+> text=Thank you.
+> author=alice
+> resolved=false
+> 
+> OK
+85,87d91
+< ERROR
+< reason=Invalid followup ID 1 1
+< 
+89c93
+< text=You are welcome.
+---
+> text=It's what people used to use to tell the time before cell phones.
+ 
+Starting audit...
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:7:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:8:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:9:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:11:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:12:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:13:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:14:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:15:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:16:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:17:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:18:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:20:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:21:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:22:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:23:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:24:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:25:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:26:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:27:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:28:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:29:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:30:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:31:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:32:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:33:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:34:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:35:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:36:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:37:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:38:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:39:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:40:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:41:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:42:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:43:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:44:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:45:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:46:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:47:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:48:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:49:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:50:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:51:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Answer.java:52:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:7:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:8:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:9:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:10:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:11:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:12:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:14:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:15:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:16:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:17:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:18:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:19:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:20:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:21:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:22:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:23:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:24:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:25:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:26:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:27:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:28:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:29:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:30:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:31:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:32:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:33:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:34:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:35:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:36:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:37:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:39:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:40:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:41:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:42:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:44:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:45:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:46:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:47:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:48:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:50:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:51:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:52:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:53:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:54:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:55:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:56:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:57:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:59:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:60:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:61:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:62:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:63:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:64:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:65:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:66:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:67:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:68:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:69:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:70:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:71:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:72:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:73:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:74:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:75:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:76:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:77:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:78:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:79:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:80:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:81:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:82:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:83:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:84:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:85:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:86:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/FollowupDiscussion.java:87:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:7:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:8:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:10:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:11:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:12:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:13:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:14:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:15:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:16:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:17:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:18:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:19:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:20:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:21:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:22:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:23:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:25:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:26:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:27:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:29:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:30:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:31:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:32:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:33:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:34:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Post.java:35:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:8:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:9:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:10:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:11:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:12:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:13:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:14:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:15:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:16:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:18:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:19:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:20:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:21:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:22:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:23:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:24:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:25:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:26:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:27:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:28:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:29:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:30:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:31:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:32:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:33:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:35:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:36:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:37:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:38:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:39:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:40:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:41:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:42:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:43:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:44:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:45:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:46:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:47:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:49:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:50:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:51:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:52:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:53:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:54:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:55:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:56:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:57:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:58:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:59:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:60:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:61:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:63:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:64:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:65:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:66:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:68:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:69:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:70:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:71:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:72:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:73:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:74:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:75:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:77:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:78:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:79:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:80:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:81:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:83:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:84:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:85:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:86:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:87:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:89:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:90:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:91:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:92:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:93:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:94:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:95:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:96:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:97:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:98:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:100:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:101:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:102:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:103:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:104:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:105:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:106:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:107:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:108:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:110:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:111:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:112:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:113:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:114:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:115:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:116:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:117:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:118:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:120:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:121:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:122:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:123:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:124:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:125:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:126:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:127:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:128:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:130:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:131:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:132:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/grade/gandhi_monil/Question.java:133:1: Line contains a tab character. [FileTabCharacter]
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing test1.expected.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:293)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:211)
+	at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:425)
+	at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:359)
+	at com.puppycrawl.tools.checkstyle.Main.main(Main.java:174)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred during the analysis of file test1.expected.java.
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:192)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:314)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:284)
+	... 4 more
+Caused by: /tmp/grade/gandhi_monil/test1.expected.java:1:1: unexpected token: OK
+	at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:181)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:439)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:174)
+	... 7 more
+Checkstyle ends with 1 errors.
+ 
+commit 05a3b7d3716257ea7e179cdcbd240d8d836218d6
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Feb 19 18:14:46 2017 -0800
+
+    Added hw3
+
+:000000 100644 0000000... 90c5a42... A	hw3/Answer.java
+:000000 100644 0000000... c74e9c9... A	hw3/FollowupDiscussion.java
+:100644 100644 661102c... 75383f9... M	hw3/PiazzaSimulation.java
+:000000 100644 0000000... f481070... A	hw3/Post.java
+:000000 100644 0000000... 98adf95... A	hw3/Question.java
+:000000 100644 0000000... 019abe6... A	hw3/User.java
+:100644 100644 d53beef... 288b7b5... M	lab2/mail/Connection.java
+
+commit 0496e78f1048eb532b0173eaead45ab2c281d030
+Author: xiaofanlinus <graderxiaofanlin@gmail.com>
+Date:   Wed Feb 15 01:01:47 2017 -0800
+
+    done
+
+:100644 100644 18f8745... e424787... M	hw2scores.txt
+
+commit b8b849809c541a40b931015a2166ac913262c0a3
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Tue Feb 14 13:22:51 2017 -0800
+
+    Added lab5
+
+:100644 100644 1d9d8a8... 7c6c534... M	hw1scores.txt
+:000000 100644 0000000... 661102c... A	hw3/PiazzaSimulation.java
+:000000 100644 0000000... a863b25... A	hw3/Request.java
+:000000 100644 0000000... acbd735... A	hw3/Response.java
+:000000 100644 0000000... fea6eae... A	hw3/test1.expected.java
+:000000 100644 0000000... 669ac25... A	hw3/test1.in.java
+:000000 100644 0000000... 951a2a8... A	lab5/report.txt
+
+commit bc765eebd562bc33c1b7fddbf0d3b14d914ae3f3
+Author: Cay Horstmann <cay@horstmann.com>
+Date:   Mon Feb 13 17:04:58 2017 -0800
+
+    Added hw2scores template
+
+:000000 100644 0000000... abb5114... A	hw2/change.png
+:000000 100644 0000000... 694b2d1... A	hw2/piazza.png
+:000000 100644 0000000... 18f8745... A	hw2scores.txt

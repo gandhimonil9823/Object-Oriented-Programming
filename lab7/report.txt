@@ -1,0 +1,11 @@
+					Lab 7
+
+Monil Gandhi(Scribe)/ Enrique Cardenas(Driver)                                   
+
+1) The test runs showing a green bar.
+
+2) It does not pass.
+
+3) Yes the unit test does pass for the corrected version
+
+4) Yes, the corrected version is correct.

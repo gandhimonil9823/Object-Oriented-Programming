@@ -1,0 +1,51 @@
+Student:
+
+Problem 1
+A dependency relationship (max. 2 points): 
+An inheritance relationship  (max. 2 points): 
+An attribute (max. 2 points): 
+An 1 : n aggregation (max. 2 points): 
+An aggregation that is not 1 : n  (max. 2 points): 
+
+Problem 2
+6 object nodes, including seq1, seq2, seq (max. 2 points): 
+3 have type ? implements IntSequence (max. 2 points):
+2 have type ? implements Iterator<Integer> (max. 2 points):
+alternate from IntSeqTest to seq1? (max. 1 point):
+<<create>> from seq1 to seq (max. 1 point): 
+next from IntSeqTest to seq (max. 1 point):
+next from seq to seq1, hasNext, next from seq1 to seq1.iter  (max. 2 points):
+next from IntSeqTest to seq (max. 1 point):
+next from seq to seq2, hasNext, next from seq2 to seq2.iter  (max. 2 points):
+
+Problem 3
+
+test returns binarySearch(...) >= 0 (max. 2 points):
+clear only if binarySearch >= 0 (max. 1 point): 
+clear calls arrayCopy(..., old elementCount - p  - 1) (max. 2 points): 
+clear decrements elementCount (max. 1 point): 
+set only if binarySearch < 0 (max. 1 point): 
+set calls arrayCopy(..., old elementCount - p) (max. 2 points):
+set increments elementCount (max. 1 point): 
+set works for empty array (max. 1 point): 
+array relocated if full (max. 2 point):
+smallest/largest removed (max. 2 points): 
+
+Problem 4
+
+Use @Test (max. 2 points): 
+import Test, Assert (max. 2 points):
+Test case calling set, clear, test (max. 3 points):
+Test case calling set, clear, looking into elements (max. 3 points):
+
+Problem 5
+
+Aggregate none, with explanation  (max. 2 points): 
+ConcreteAggregate InputStream, String, File  (max. 2 points): 
+Iterator Iterator<String> (max. 1 point): 
+ConcreteIterator Scanner (max. 1 point): 
+createIterator() new Scanner(...)  (max. 1 point): 
+next() next() (max. 1 point): 
+isDone() opposite of hasNext() (max. 1 point): 
+currentItem() Return value of next() (max. 1 point): 
+

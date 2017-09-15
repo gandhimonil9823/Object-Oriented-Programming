@@ -1,0 +1,154 @@
+Student: gandhi_monil
+ShapeTest passes (max 20, -3 per failure, min 0): 17
+AnimationTester7 runs and shows boxed car and dogs (max 3): 3
+No CheckStyle issues (max 3): 3
+Clean submission directory (no .class, .metadata etc.) (max 3): 3
+At least 3 git checkins (max 3): 3
+-------------------------------------------------
+ShapeTest.java
+JUnit version 4.11
+....E......
+Time: 0.264
+There was 1 failure:
+1) testDrawnBox(ShapeTest)
+java.lang.AssertionError: expected:<-16777216> but was:<-1>
+	at ShapeTest.testDrawnBox(ShapeTest.java:113)
+
+FAILURES!!!
+Tests run: 10,  Failures: 1
+
+-------------------------------------------------
+-------------------------------------------------
+Starting audit...
+Audit done.
+-------------------------------------------------
+.
+./ShapeIcon.java
+./BoxedShape.java
+./CarShape.java
+./MoveStrategy.java
+./SimpleMoveStrategy.java
+./MoveableIcon.java
+./MoveableShape.java
+./BoundedMoveStrategy.java
+./Animation.java
+./CompoundShape.java
+-------------------------------------------------
+commit 1df6fbe15106f46aa4c09167f9b561eb97eca244
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Mar 19 15:20:17 2017 -0700
+
+    ..
+
+:100644 000000 48e2477... 0000000... D	hw6/AnimationTester.java
+
+commit b24f4994c3c6530d59084d01277980eeabe1bbdf
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Mar 19 15:19:17 2017 -0700
+
+    delete file AnimationTester
+
+:100644 100644 06c8eb3... ff74270... M	hw6/Animation.java
+:100644 100644 bbcb713... 48e2477... M	hw6/AnimationTester.java
+:100644 100644 b79678e... 7f2c938... M	hw6/BoundedMoveStrategy.java
+:100644 100644 3615498... 6d34f47... M	hw6/BoxedShape.java
+:100644 100644 7281970... 6f5c1d1... M	hw6/CarShape.java
+:100644 100644 5c7340e... 74af484... M	hw6/CompoundShape.java
+:100644 100644 bddc7d1... f56ab0e... M	hw6/MoveStrategy.java
+:100644 100644 7a1a3b1... 603a39a... M	hw6/MoveableIcon.java
+:100644 100644 a6c3095... dd183b0... M	hw6/ShapeIcon.java
+:100644 100644 b1141e0... 6906dd6... M	hw6/SimpleMoveStrategy.java
+
+commit 0f5b38052585bf0cbdf600b45533904b0425b4ef
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Mar 19 00:37:59 2017 -0700
+
+    hw6 almost done
+
+:100644 100644 ea3a480... 06c8eb3... M	hw6/Animation.java
+:100644 100644 456c2df... bbcb713... M	hw6/AnimationTester.java
+:100644 100644 ce809bc... b79678e... M	hw6/BoundedMoveStrategy.java
+:100644 100644 ecbbfb5... 5c7340e... M	hw6/CompoundShape.java
+:100644 100644 0e7df3d... 7a1a3b1... M	hw6/MoveableIcon.java
+:100644 100644 5a2dc2d... a6c3095... M	hw6/ShapeIcon.java
+:100644 100644 8bb93e3... b1141e0... M	hw6/SimpleMoveStrategy.java
+
+commit 691dc4421935d38b05837249d971486183242a5b
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sat Mar 18 00:29:37 2017 -0700
+
+    ..
+
+:000000 100644 0000000... ce809bc... A	hw6/BoundedMoveStrategy.java
+
+commit 42e686124e0ca67b4a6c467ecd2ddd810b7bd26c
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sat Mar 18 00:27:20 2017 -0700
+
+    Working on hw6
+
+:000000 100644 0000000... ea3a480... A	hw6/Animation.java
+:100644 100644 f590bcc... 456c2df... M	hw6/AnimationTester.java
+:000000 100644 0000000... 3615498... A	hw6/BoxedShape.java
+:100644 100644 e082fc7... 7281970... M	hw6/CarShape.java
+:000000 100644 0000000... ecbbfb5... A	hw6/CompoundShape.java
+:000000 100644 0000000... bddc7d1... A	hw6/MoveStrategy.java
+:000000 100644 0000000... 0e7df3d... A	hw6/MoveableIcon.java
+:100644 100644 f0da555... 5357917... M	hw6/MoveableShape.java
+:100644 100644 2b8ae7d... 5a2dc2d... M	hw6/ShapeIcon.java
+:000000 100644 0000000... 8bb93e3... A	hw6/SimpleMoveStrategy.java
+
+commit b9df94c72d767933aa67b5d622057c5916662742
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Wed Mar 15 16:12:43 2017 -0700
+
+    Added lab13
+
+:100644 100644 a0e932b... f590bcc... M	hw6/AnimationTester.java
+:000000 100644 0000000... 28eb59e... A	lab13/report.txt
+:000000 100644 0000000... c9f4761... A	lab13/sequence.png
+:000000 100644 0000000... 9497952... A	lab9/ActionTester.java
+
+commit a4458c6dec2638a890e7844b5690dfed822ea12e
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Mar 13 23:32:09 2017 -0700
+
+    Started hw6
+
+:000000 100644 0000000... a0e932b... A	hw6/AnimationTester.java
+:000000 100644 0000000... e082fc7... A	hw6/CarShape.java
+:000000 100644 0000000... f0da555... A	hw6/MoveableShape.java
+:000000 100644 0000000... 2b8ae7d... A	hw6/ShapeIcon.java
+
+commit f3d5175bc64ed4a580942cbc081a784c65f3597c
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Mar 13 18:36:12 2017 -0700
+
+    Lab10 added
+
+:000000 100644 0000000... a0e932b... A	lab10/AnimationTester.java
+:000000 100644 0000000... e082fc7... A	lab10/CarShape.java
+:000000 100644 0000000... f0da555... A	lab10/MoveableShape.java
+:000000 100644 0000000... 2b8ae7d... A	lab10/ShapeIcon.java
+
+commit 7684eebff47115deae5d350f3b0efc3fd2171dc1
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Mar 13 18:34:24 2017 -0700
+
+    Remove lab10
+
+:100644 000000 a0e932b... 0000000... D	lab10/animation/AnimationTester.java
+:100644 000000 e082fc7... 0000000... D	lab10/animation/CarShape.java
+:100644 000000 f0da555... 0000000... D	lab10/animation/MoveableShape.java
+:100644 000000 2b8ae7d... 0000000... D	lab10/animation/ShapeIcon.java
+
+commit 553ee075d08e1b9b77b41e06edd99e9cb20181a2
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Mar 13 18:29:21 2017 -0700
+
+    Lab 10
+
+:000000 100644 0000000... a0e932b... A	lab10/animation/AnimationTester.java
+:000000 100644 0000000... e082fc7... A	lab10/animation/CarShape.java
+:000000 100644 0000000... f0da555... A	lab10/animation/MoveableShape.java
+:000000 100644 0000000... 2b8ae7d... A	lab10/animation/ShapeIcon.java

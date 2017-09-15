@@ -1,0 +1,72 @@
+Student: gandhi_monil
+Git submission (max 4): 4
+Git repo private (max 4): 4
+Submitted into (root)/hw1/* (max 4): 4
+Plain text aboutme.txt (max 4): 4
+Lists passes (max 8): 6
+
+-2 for submission error
+
+Encodings passes (max 8): 8
+ 
+One java file's name mismatches.
+ 
+Tester.java:17: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+Tester.java:21: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+Tester.java:25: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+Tester.java:29: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+Tester.java:33: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+Tester.java:37: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+Tester.java:41: error: cannot find symbol
+      Lists.swapLargestAndSecondSmallest(a);
+      ^
+  symbol:   variable Lists
+  location: class Tester
+7 errors
+Error: Could not find or load main class Tester
+[-.., .-., ..-]
+[-.., .-., ..-]
+true
+[---.., --.-., --..-, -.--., -.-.-, -..--, .---., .--.-, .-.--, ..---]
+[---.., --.-., --..-, -.--., -.-.-, -..--, .---., .--.-, .-.--, ..---]
+true
+[--...., -.-..., -..-.., -...-., -....-, .--..., .-.-.., .-..-., .-...-, ..--.., ..-.-., ..-..-, ...--., ...-.-, ....--]
+[--...., -.-..., -..-.., -...-., -....-, .--..., .-.-.., .-..-., .-...-, ..--.., ..-.-., ..-..-, ...--., ...-.-, ....--]
+true
+ 
+Your name: Monil Gandhi
+Your student ID: 010020231	
+Your major: Computer Science
+Your preferred email address: gandhimonil.2008@gmail.com 
+Check one: [~] Undergraduate, [ ] Graduate, [ ] Open university 
+Repeating the class? [ ] Yes, [~] No
+Place and semester where you took a programming course in Java: SJSU Freshmen 2nd Semester
+Course number and grade received: B
+Place and semester where you took a course in data structures: SJSU Sophomore 2nd Semester
+Course number and grade received: B
+Time it took you to answer the two questions below: 3 hours
+Did you ask anyone for help? [ ] Yes, [~] No

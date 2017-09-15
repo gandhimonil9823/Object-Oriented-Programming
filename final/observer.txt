@@ -1,0 +1,10 @@
+Question 2
+
+Yes it is an example of Observer Pattern, as you can see the EventHandler interface is the "Observer" and one the setOnAction is called the Button which is the "Subject" is notified and 
+it makes the appropriate changes.
+
+Subject - Button
+Observer - EventHandler
+ConcreteObserver - Class which implements the EventHandler
+attach() - handle(ActionEvent e)
+notify() - setOnAction 

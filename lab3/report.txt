@@ -1,0 +1,14 @@
+Monil Gandhi(Scribe)/ Enrique Cardenas(Driver)
+
+1) Classes - Users
+             Courses
+             Posts
+             Poll
+             PostManager
+             Statistics
+             Answer
+2) Scenarios - user starts a follow-up discussion
+               user post a question
+               user respond to question
+
+             

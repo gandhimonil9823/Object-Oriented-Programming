@@ -1,0 +1,10 @@
+Name in Design Pattern |   Actual Name
+=====================================================
+Aggregate              |  Scanner
+ConcreteAggregate      |  Scanner.in
+Iterator               |  does not apply
+ConcreteIterator       |   anonymous class implementing Scanner
+createIterator()       |   
+next()                 |   next()
+isDone()               |   opposite of hasnext()
+currentItem()          |   return value of next()

@@ -1,0 +1,380 @@
+Student: gandhi_monil
+ArraySetTest passes (max 8): 7
+BitSetTest passes (max 8): 3
+Provides SetTest.java with at least 4 test cases (max 4): 4
+No CheckStyle issues (max 3): 3
+At least 3 git checkins (max 3): 3
+-------------------------------------------------
+ArraySetTest
+JUnit version 4.11
+....E...
+Time: 0.035
+There was 1 failure:
+1) growSet(ArraySetTest)
+java.lang.AssertionError
+	at ArraySetTest.growSet(ArraySetTest.java:88)
+
+FAILURES!!!
+Tests run: 7,  Failures: 1
+
+-------------------------------------------------
+BitSetTest
+JUnit version 4.11
+.E..E.E.E.E.
+Time: 0.042
+There were 5 failures:
+1) arrayTest(BitSetTest)
+java.lang.ArrayIndexOutOfBoundsException: 12
+	at BitSet.test(BitSet.java:43)
+	at BitSet.set(BitSet.java:55)
+	at BitSetTest.arrayTest(BitSetTest.java:112)
+2) growSet(BitSetTest)
+java.lang.AssertionError
+	at BitSetTest.growSet(BitSetTest.java:73)
+3) posAndNeg(BitSetTest)
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at BitSet.set(BitSet.java:80)
+	at BitSetTest.posAndNeg(BitSetTest.java:89)
+4) setAndClear(BitSetTest)
+java.lang.AssertionError: expected:<150> but was:<100>
+	at BitSetTest.setAndClear(BitSetTest.java:49)
+5) arrayTestNeg(BitSetTest)
+java.lang.ArrayIndexOutOfBoundsException: -3
+	at BitSet.set(BitSet.java:80)
+	at BitSetTest.arrayTestNeg(BitSetTest.java:129)
+
+FAILURES!!!
+Tests run: 7,  Failures: 5
+
+-------------------------------------------------
+SetTest
+JUnit version 4.11
+........
+Time: 0.012
+
+OK (8 tests)
+
+-------------------------------------------------
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+/**
+ * jUnit test case class
+ * 
+ * @author monil
+ *
+ */
+public class SetTest
+{
+   /**
+    * A method to test ArraySet
+    */
+   @Test
+   public void setAndClear()
+   {
+      IntSet set = new ArraySet();
+      set.set(100);
+      set.set(150);
+      set.clear(100);
+      assertEquals(150, set.min());
+      assertEquals(150, set.max());
+      assertEquals(1, set.size());
+      assertTrue(set.test(150));
+      assertFalse(set.test(100));
+   }
+
+   /**
+    * A method to test ArraySet
+    */
+   @Test
+   public void elementOrderRemove()
+   {
+      ArraySet set = new ArraySet();
+      set.set(40);
+      set.set(110);
+      set.set(90);
+      set.set(70);
+      set.set(100);
+      set.set(80);
+      set.clear(110);
+      assertEquals(40, set.elements[0]);
+      assertEquals(80, set.elements[1]);
+      assertEquals(90, set.elements[2]);
+      assertEquals(100, set.largest);
+   }
+
+   /**
+    * A method to test BitSet
+    */
+   @Test
+   public void testOneElement()
+   {
+      IntSet set = new BitSet();
+      set.set(100);
+      assertEquals(100, set.min());
+      assertEquals(100, set.max());
+      assertEquals(1, set.size());
+      assertTrue(set.test(100));
+      assertFalse(set.test(99));
+   }
+
+   /**
+    * A method to test BitSet
+    */
+   @Test
+   public void testBits()
+   {
+      BitSet set = new BitSet();
+      set.set(100);
+      set.set(102);
+      set.clear(100);
+      assertEquals(4, set.elements[0]);
+      assertEquals(100, set.start);
+   }
+
+   /**
+    * A method to test ArraySet
+    */
+   @Test
+   public void checkingFor10()
+   {
+      ArraySet set = new ArraySet();
+      set.set(40);
+      set.set(110);
+      set.set(90);
+      set.set(70);
+      set.set(100);
+      set.set(80);
+      set.set(70);
+      set.clear(110);
+      set.clear(100);
+      set.clear(40);
+      set.set(40);
+      set.clear(80);
+      assertEquals(70, set.elements[0]);
+      assertEquals(40, set.elements[1]);
+      assertEquals(90, set.elements[2]);
+      assertEquals(90, set.largest);
+      assertEquals(40, set.smallest);
+
+   }
+
+   /**
+    * A method to test ArraySet
+    */
+   @Test
+   public void moreThanthesize()
+   {
+      ArraySet set = new ArraySet();
+      set.set(40);
+      set.set(110);
+      set.set(90);
+      set.set(70);
+      set.set(100);
+      set.set(80);
+      set.clear(110);
+      set.set(170);
+      set.set(140);
+      set.set(50);
+      set.set(30);
+      set.set(100);
+      set.set(200);
+      set.set(150);
+      set.clear(30);
+      set.clear(200);
+      set.set(220);
+      set.clear(220);
+      set.set(20);
+      set.set(10);
+      set.clear(10);
+
+      assertEquals(40, set.elements[0]);
+      assertEquals(80, set.elements[1]);
+      assertEquals(90, set.elements[2]);
+      assertEquals(170, set.largest);
+      assertEquals(20, set.smallest);
+   }
+
+   /**
+    * A method to test ArraySet
+    */
+   @Test
+   public void elementOrderRemove1()
+   {
+      ArraySet set = new ArraySet();
+      set.set(40);
+      set.set(110);
+      set.set(90);
+      set.clear(90);
+      set.set(80);
+      set.clear(110);
+      assertEquals(80, set.largest);
+      assertEquals(40, set.smallest);
+      set.clear(40);
+      set.clear(80);
+   }
+
+   /**
+    * A method to test BitSet
+    */
+   @Test
+   public void testTheBits()
+   {
+      BitSet set = new BitSet();
+      set.set(100);
+      set.set(102);
+      set.set(110);
+      set.set(200);
+      set.set(300);
+      set.set(400);
+      set.set(200);
+      set.clear(100);
+      set.clear(200);
+      set.clear(300);
+      set.clear(400);
+      assertEquals(100, set.min());
+      assertEquals(400, set.max());
+      assertEquals(100, set.start);
+   }
+}
+-------------------------------------------------
+Starting audit...
+Audit done.
+-------------------------------------------------
+commit a301c509c98f3cac837f13af9ac8f9add7311e2a
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Feb 27 02:08:41 2017 -0800
+
+    Hw4 submission
+
+:100644 100644 23b3b10... ff0a9e2... M	hw4/ArraySet.java
+:100644 100644 e2ed1de... 9c226c3... M	hw4/BitSet.java
+:100644 100644 6f56327... 45dd574... M	hw4/IntSet.java
+:100644 100644 c47bed0... 9796730... M	hw4/SetTest.java
+
+commit b63f1cc74f41a0f0443096d51850cca055ff0eb4
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Feb 26 23:23:33 2017 -0800
+
+    Working on hw4
+
+:100644 100644 02c2dff... 23b3b10... M	hw4/ArraySet.java
+:100644 100644 d49d541... e2ed1de... M	hw4/BitSet.java
+:100644 100644 2b8ecd8... c47bed0... M	hw4/SetTest.java
+
+commit 46e55a1e6abf1ac3098542fc032bfc4084fe5732
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sun Feb 26 00:27:00 2017 -0800
+
+    Working on hw4
+
+:100644 100644 29d67c0... d49d541... M	hw4/BitSet.java
+:100644 100644 bca486f... 2b8ecd8... M	hw4/SetTest.java
+
+commit 4de7cbed0ef43fb23ff15ed218388b476c81fe95
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Sat Feb 25 13:44:43 2017 -0800
+
+    Working on hw3
+
+:100644 100644 6a26938... 02c2dff... M	hw4/ArraySet.java
+:100644 100644 d556a29... bca486f... M	hw4/SetTest.java
+
+commit c2151655387b9937a4c802bbc3e3d9a7a51ff321
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Thu Feb 23 17:51:20 2017 -0800
+
+    Hw3 correction
+
+:100644 100644 31a76bf... 93c3438... M	hw3/FollowupDiscussion.java
+:100644 100644 6dcd431... 7f1025e... M	hw3/PiazzaSimulation.java
+:100644 100644 d55967e... d29be68... M	hw3/Question.java
+
+commit 601091d2bbdad57cf71b0beb7c4bd45c409121df
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Wed Feb 22 20:02:03 2017 -0800
+
+    Working on hw4
+
+:100644 100644 bdd0677... 31a76bf... M	hw3/FollowupDiscussion.java
+:100644 100644 f56cbe1... d55967e... M	hw3/Question.java
+:100644 100644 7394533... 6a26938... M	hw4/ArraySet.java
+:100644 100644 4175136... 29d67c0... M	hw4/BitSet.java
+:100644 100644 85ed521... d556a29... M	hw4/SetTest.java
+
+commit 5090aa03f655ef18a240991573228b66bd6d7738
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Wed Feb 22 00:38:52 2017 -0800
+
+    Working on hw4
+
+:100644 100644 a863b25... 6c0abd6... M	hw3/Request.java
+:100644 100644 acbd735... 2296367... M	hw3/Response.java
+:100644 100644 c8f203e... 7394533... M	hw4/ArraySet.java
+:000000 100644 0000000... 85ed521... A	hw4/SetTest.java
+
+commit 386eb583344e004e792efc6992ecb9a8a0485650
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Tue Feb 21 23:38:22 2017 -0800
+
+    Added file
+
+:000000 100644 0000000... 669ac25... A	hw3/test1.in
+
+commit 29f394f67b8ee01420edef158dda525195794c96
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Tue Feb 21 23:37:06 2017 -0800
+
+    Removed files
+
+:100644 100644 90c5a42... 1a433d8... M	hw3/Answer.java
+:100644 100644 c74e9c9... bdd0677... M	hw3/FollowupDiscussion.java
+:100644 100644 75383f9... 6dcd431... M	hw3/PiazzaSimulation.java
+:100644 100644 f481070... 5884f46... M	hw3/Post.java
+:100644 100644 540c0bb... f56cbe1... M	hw3/Question.java
+:100644 100644 019abe6... f562190... M	hw3/User.java
+:100644 000000 fea6eae... 0000000... D	hw3/test1.expected.java
+:100644 000000 669ac25... 0000000... D	hw3/test1.in.java
+
+commit daa6531792ed22b43d03b5c21a9acb86b64e6582
+Author: xiaofanlinus <graderxiaofanlin@gmail.com>
+Date:   Tue Feb 21 23:12:24 2017 -0800
+
+    hw3 regraded
+
+:100644 100644 f4c8596... 48bdb5d... M	hw3scores.txt
+
+commit 64f37a6aa32c3fc604afdba21fff65ca5e08f497
+Author: xiaofanlinus <graderxiaofanlin@gmail.com>
+Date:   Tue Feb 21 22:31:12 2017 -0800
+
+    hw3 graded
+
+:100644 100644 970e815... f4c8596... M	hw3scores.txt
+
+commit 8028808031420997da4aa421b9a07c79ce29f9c9
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Feb 20 20:24:08 2017 -0800
+
+    Added lab7
+
+:000000 100644 0000000... a4b011c... A	lab7/report.txt
+
+commit fa787f658d80bec5495330ab3101592834c23034
+Author: Monil Gandhi <monil.gandhi@sjsu.edu>
+Date:   Mon Feb 20 20:13:44 2017 -0800
+
+    Started hw4
+
+:100644 100644 98adf95... 540c0bb... M	hw3/Question.java
+:000000 100644 0000000... c8f203e... A	hw4/ArraySet.java
+:000000 100644 0000000... 4175136... A	hw4/BitSet.java
+:000000 100644 0000000... 6f56327... A	hw4/IntSet.java
+
+commit 3eb767f7e2157ee4ae2da8da7141e124a582a4e1
+Author: Cay Horstmann <cay@horstmann.com>
+Date:   Mon Feb 20 09:33:44 2017 -0800
+
+    hw3
+
+:000000 100644 0000000... 970e815... A	hw3scores.txt

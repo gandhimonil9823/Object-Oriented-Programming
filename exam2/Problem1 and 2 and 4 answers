@@ -1,0 +1,38 @@
+Problem 1
+1) Two subclasses - Byte,short
+2) Two methods - byteValue(), shortValue()
+3) Because the methods byteValue and shortValue could be redefined as per changing certain steps in the concrete class which extends the number superclass
+
+Problem 2
+Decorator:
+
+Name in Design Pattern | Actual Name
+====================================
+Component              |MoveableShape
+ConcreteComponent      |CarShape,MoveableIcon
+Decorator              |BoxedShape
+method()               |draw()
+
+Composite:
+
+Name in Design Pattern | Actual Name
+====================================
+Primitive              |MoveableSape
+Composite              |CompoundShape
+Leaf                   |CarShape,MoveableIcon
+method()               |A method of the MoveableShape such as move()
+
+Strategy:
+
+Name in Design Pattern | Actual Name
+====================================
+Context                |Animation,Animation2,Animation3,Animation4,Animation5,Animation6,Animation7
+Strategy               |MoveStrategy
+ConcreteStrategy       |SimpleMoveStrategy,CompoundMoveStrategy, CrazyMoveStrategy
+doWork()               |process(List<MoveableShape> shapes)
+
+Problem 4
+
+b) No this is not an example of Decorator pattern because it does not modify the decoratior class mathod
+ 
+c) This is an templeate method pattern example as it changes calls the required methods form its mousePressed methods
